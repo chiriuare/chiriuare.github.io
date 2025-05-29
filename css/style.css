@@ -446,7 +446,8 @@ b i:last-child {
     letter-spacing: 4px;
     text-transform: uppercase;
     color: #999;
-    line-height: 1.7
+    line-height: 1.7;
+    margin-top: 2rem;
 }
 
 
@@ -530,25 +531,32 @@ b i:last-child {
 .box-headline {
 	font-size: 130px;
 	line-height: 1.0;
+    min-height: 140px; /* reserva espai per al text rotatiu */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
 }
 
 .box-words-wrapper {
-	text-align: center;
     display: inline-block;
     position: relative;
+    width: 100%;
+    text-align: center;
 }
 
 .box-words-wrapper b {
-	text-align: center;
-    display: inline-block;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     white-space: nowrap;
-    left: 0;
-    top: 0;
 }
 
 .box-words-wrapper b.is-visible {
-    position: relative;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .no-js .box-words-wrapper b {
@@ -1167,6 +1175,7 @@ textarea:focus {
     }
     .box-intro h5 {
         font-size: 12px;
+
     }
     .main-container {
         padding: 50px 0;
@@ -1203,6 +1212,13 @@ textarea:focus {
   margin: 0 auto;
   padding: 0 0rem;
   box-sizing: border-box;
+}
+
+/* Responsive: pantalles petites */
+@media (max-width: 600px) {
+  .box-words-wrapper b {
+    font-size: 1.5rem;
+  }
 }
 
 
