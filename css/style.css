@@ -1190,7 +1190,7 @@ textarea:focus {
 
 /* Responsive: pantalles grans */
 
-/*
+
 @media (min-width: 1600px) {
   .hero {
     font-size: 1.2rem;
@@ -1199,24 +1199,10 @@ textarea:focus {
 }
 
 .page-wrapper {
-  max-width: 1400px;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 0 2rem;
   box-sizing: border-box;
 }
-*/
 
-.page-wrapper {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 2rem;
-  box-sizing: border-box;
-  max-width: none;
-}
 
-@media (min-width: 1600px) {
-	.hero {
-	  font-size: clamp(1rem, 2vw, 2rem);
-	  padding: clamp(1rem, 5vw, 6rem) 2rem;
-	}
-}	
