@@ -1201,7 +1201,7 @@ textarea:focus {
 .page-wrapper {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 0rem;
   box-sizing: border-box;
 }
 
